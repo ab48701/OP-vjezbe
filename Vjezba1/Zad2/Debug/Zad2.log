@@ -1,0 +1,4 @@
+﻿  Zad2.cpp
+C:\Users\Korisnik\OneDrive\Radna površina\OBJEKTNO PROGRAMIRNAJE VJEŽBE\Vjezba1\Zad2\Zad2.cpp(25,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Korisnik\OneDrive\Radna površina\OBJEKTNO PROGRAMIRNAJE VJEŽBE\Vjezba1\Zad2\Zad2.cpp(47,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Zad2.vcxproj -> C:\Users\Korisnik\OneDrive\Radna površina\OBJEKTNO PROGRAMIRNAJE VJEŽBE\Vjezba1\Debug\Zad2.exe
