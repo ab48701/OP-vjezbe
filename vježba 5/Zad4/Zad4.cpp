@@ -87,7 +87,7 @@ int main()
 		int meta = 0;
 		meta= g.rotate(t[j]);
 		if (meta == 0) {
-			cout << "Nestalo metaka" << endl;
+			cout << "Nema vise metaka" << endl;
 			break;
 		}
 		if (meta == 2)
