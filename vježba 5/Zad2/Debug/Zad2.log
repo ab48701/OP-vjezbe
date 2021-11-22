@@ -1,4 +1,0 @@
-﻿  Zad2.cpp
-C:\Users\Korisnik\OneDrive\Radna površina\OBJEKTNO PROGRAMIRNAJE VJEŽBE\Nova mapa\Vježba5\Zad2\Zad2.cpp(13,46): error C2533: 'Dot': constructors not allowed a return type
-C:\Users\Korisnik\OneDrive\Radna površina\OBJEKTNO PROGRAMIRNAJE VJEŽBE\Nova mapa\Vježba5\Zad2\Zad2.cpp(15,5): error C2535: 'Dot::Dot(double,double,double)': member function already defined or declared
-C:\Users\Korisnik\OneDrive\Radna površina\OBJEKTNO PROGRAMIRNAJE VJEŽBE\Nova mapa\Vježba5\Zad2\Zad2.cpp(13): message : see declaration of 'Dot::Dot'
