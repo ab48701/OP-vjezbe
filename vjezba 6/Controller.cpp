@@ -22,15 +22,15 @@ void HangmanController::checkLetter(char letter, HangmanModel& model) {
 	model.setUsedLetters(usedLetters);
 
 	for (int i = 0; i < movieWordSize; i++) {
-		if (guessMovie[i] == letter && usedLetters.find(letter) == string::npos) { //if letter is found in guess movie(has been allready added) and not found in used letters
-			model.setInGame(false);                                                              //user had allready chosen the letter
+		if (guessMovie[i] == letter && usedLetters.find(letter) == string::npos) 
+			model.setInGame(false);                                                              
 			break;
 		}
-		else if (movie.find(letter) == string::npos) { //if letter is NOT found in movie 
+		else if (movie.find(letter) == string::npos)  
 			model.setInGame(false);
 			break;
 		}
-		else if (model.getMovie()[i] == letter) { //if the letter is found in movie
+		else if (model.getMovie()[i] == letter) 
 			guessMovie[i] = letter;
 			model.setInGame(true);
 		}
