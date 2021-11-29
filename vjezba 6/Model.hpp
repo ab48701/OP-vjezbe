@@ -1,18 +1,20 @@
 #pragma once
 #include <string>
 #include <fstream>
+
+using namespace std;
+
 class HangmanModel {
-	std::string movie;
-	std::string guessMovie;
-	std::string usedLetters;
+	string movie;
+	string guessMovie;
+	string usedLetters;
 	int lives = 8;
 	bool inGame;
 public:
 	HangmanModel();
-	~HangmanModel() {};
-	std::string getMovie() const;
-	std::string getGuessMovie() const;
-	std::string getUsedLetters() const;
+	string getMovie() const;
+	string getGuessMovie() const;
+	string getUsedLetters() const;
 	int getLives();
 	bool getInGame();
 	void setGuessMovie(const std::string& guessMovie);
