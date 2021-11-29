@@ -18,11 +18,11 @@ int main()
 		view.displayCurrentProgress(hangman);
 		controller.userEntry(hangman);
 		controller.updateLives(hangman);
-		system("cls");
+		
 	}
 	view.displayHangman(hangman);
 	cout << endl;
 	view.displayUsedLetters(hangman);
 	view.displayCurrentProgress(hangman);
-	system("pause");
+	
 }
