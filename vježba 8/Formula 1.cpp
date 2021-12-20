@@ -69,14 +69,7 @@ public:
         penalty.addSeconds(sec);
         return sec;
     }
-
-
-
 };
-
-
-
-
 
 void Timer::setSeconds(double seconds) {
     s = seconds;
