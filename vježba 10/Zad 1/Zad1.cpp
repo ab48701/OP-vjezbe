@@ -1,36 +1,64 @@
-﻿#include <iostream>
-
+#include <iostream>
 
 using namespace std;
 
-
-template <class SortArr>
-void Sort(SortArr* arr,  size_t  n){
-	for (int i = 0; i < n - 1; i++)
+template <typename temp>
+void sortArr(temp* arr, int n)
+{
+	int c;
+	for (size_t i = 0; i < n; i++)
 	{
-		for (int j = i + 1; j < n; j++)
+		for (size_t j = 0; j < n - 1; j++)
 		{
 			if (arr[i] > arr[j])
 			{
-				SortArr Object_item;
-				Object_item = arr[i];
+				c = arr[i];
 				arr[i] = arr[j];
-				arr[j] = Object_item;
-
+				arr[j] = c;
 			}
 		}
+	}
+	for (size_t i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
 	}
 }
 
 
+
+template <typename temp>
+
+void sortArr(char* arr, int n)
+{
+	char c;
+	for (size_t i = 0; i < n; i++)
+	{
+		for (size_t j = 0; j < n - 1; j++)
+		{
+			if (tolower(arr[i]) < tolower(arr[j]))
+			{
+				c = arr[i];
+				arr[i] = arr[j];
+				arr[j] = c;
+			}
+		}
+	}
+	for (size_t i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
+	}
+}
+
+
+
 int main()
 {
-	char array[5] = { 'g','e','k','l','m' };
+	int arr[] = { 1,5,56,45,64,2 };
+	int n = sizeof(arr) / sizeof(int);
 
-	Sort(array, 5);
-	for (int i = 0; i < 10; i++)
-		cout << array[i] << " ";
-	cout << endl;
 
-	return 0;
+	char arr2[] = { 'G','H','f','s','z','a','A'};
+	int n2 = sizeof(arr2) / sizeof(char);
+
+	sortArr<char>(arr2, n2);
 }
