@@ -33,4 +33,3 @@ template <class StackType> bool Stack<StackType>::isEmpty() {
 		return 0;
 }
 
-
