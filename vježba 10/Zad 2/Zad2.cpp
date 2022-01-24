@@ -3,28 +3,38 @@
 
 using namespace std;
 
-int main() {
-	Stack<int>  integerStack;
+int main()
+{
+	int n = 5;
+	Stack<int> stack(n);
 
-	cout << "Uklonjen zadnji element iz stacka: " << integerStack.pop() << endl;
-	cout << "Uklonjen zadnji element iz stacka: " << integerStack.pop() << endl;
-	cout << "Uklonjen zadnji element iz stacka: " << integerStack.pop() << endl;
-
-
-	integerStack.push(155);
-	integerStack.push(589);
-	integerStack.push(953);
-
-	if (integerStack.isEmpty()) {
-		cout << "Stack je prazan !" << endl;
+	for (int i = 0; i < n; i++)
+	{
+		stack.push(i);
 	}
 
-	integerStack.push(1000);
-
-	if (integerStack.isEmpty() == 0) {
-		cout << "Stack nije prazan!" << endl;
+	if (stack.is_empty())
+	{
+		cout << "Stack not empty";
+	}
+	else
+	{
+		cout << "Stack empty";
 	}
 
-	return 0;
+	cout << endl;
+
+	for (int i = 0; i < n; i++)
+	{
+		stack.pop();
+	}
+
+	if (stack.is_empty())
+	{
+		cout << "Stack not empty";
+	}
+	else
+	{
+		cout << "Stack empty";
+	}
 }
-
